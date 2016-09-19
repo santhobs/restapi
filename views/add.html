@@ -1,0 +1,16 @@
+
+
+
+<input type="text" name="" ng-model="newNames.fname">
+<input type="text" name="" ng-model="newNames.lname">
+<button ng-click="save()">Submit</button>
+<button ng-click="dlall()">Delete All</button>
+<button ng-click="update()">Update</button>
+<a href="/logout">Logout</a>
+<div ng-repeat="x in names">
+	<div>{{x.fname}}{{x.lname}}{{x._id}}<button ng-click="dlte(x._id)">Delete</button><button ng-click="edit(x._id)">Edit</button></div>
+</div>
+
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="restapi">
+<head>
+	<title></title>
+
+</head>
+<body>
+<span ng-hide="authenticated">
+<a href="#/login">Login</a>
+<a href="#/signup">Signup</a>
+</span>
+<span ng-show="authenticated">
+Welcome : {{current_user}}
+<a href="" ng-click="signout()">Signup</a>
+</span>
+<div ng-view></div>
+
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-route/angular-route.min.js"></script>
+<script src="js/view-app.js"></script>
+<script src="js/addCtrl.js"></script>
+<script src="js/listCtrl.js"></script>
+<script src="js/services.js"></script>
+<script src="js/loginCtrl.js"></script>
+
+</body>
+</html>
